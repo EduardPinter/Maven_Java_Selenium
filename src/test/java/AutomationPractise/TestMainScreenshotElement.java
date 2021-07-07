@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 
 import java.io.IOException;
 
-public class  MainScreenshotElementTest extends TestBase {
+public class TestMainScreenshotElement extends TestBase {
 
     protected String pixelsRedDress = "-2337px";
     protected String srcOfPicture = "http://automationpractice.com/modules/homeslider/images/sample-3.jpg";

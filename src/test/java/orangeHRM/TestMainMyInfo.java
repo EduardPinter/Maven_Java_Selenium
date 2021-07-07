@@ -9,9 +9,9 @@ import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class MainMyInfoTest extends TestBase {
+public class TestMainMyInfo extends TestBase {
 
-    private final Logger log = LoggerFactory.getLogger(MainMyInfoTest.class);
+    private final Logger log = LoggerFactory.getLogger(TestMainMyInfo.class);
 
     @Test
     public void testMyInfo() {

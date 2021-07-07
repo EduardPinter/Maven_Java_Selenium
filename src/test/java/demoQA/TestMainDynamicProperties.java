@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 
-public class MainDynamicPropertiesTest extends TestBase {
+public class TestMainDynamicProperties extends TestBase {
 
     protected String randomText = "This text has random Id";
     protected String colorValue = "red";

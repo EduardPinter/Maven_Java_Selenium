@@ -10,9 +10,9 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class MainUploadTest extends TestBase {
+public class TestMainUpload extends TestBase {
 
-    protected String filePath = "/home/edi/Desktop/image.png";  // koristiti unutar ovog foldera
+    protected String filePath = "/home/edi/IdeaProjects/Maven_Java_Selenium/image.png";  // koristiti unutar ovog foldera
     protected String alertMessageText = String.format("Thanks, you have selected %s file to Upload", filePath);
 
     @Test

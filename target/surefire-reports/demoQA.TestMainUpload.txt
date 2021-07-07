@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: demoQA.TestMainUpload
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 4.7 s <<< FAILURE! - in demoQA.TestMainUpload
+testUpload  Time elapsed: 4.699 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Actual result is not the same as expected ==> expected: <Thanks, you have selected /home/edi/Desktop/image.png file to Upload> but was: <C:\fakepath\image.png>
+	at demoQA.TestMainUpload.testUpload(TestMainUpload.java:26)
+

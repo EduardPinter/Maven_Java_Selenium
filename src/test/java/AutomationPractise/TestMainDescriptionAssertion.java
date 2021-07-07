@@ -7,7 +7,7 @@ import DriverInit.TestBase;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-public class MainDescriptionAssertionTest extends TestBase {
+public class TestMainDescriptionAssertion extends TestBase {
 
     protected String word = "blouse";
     protected String blouseItemDescriptionText = "Short sleeved blouse with feminine draped sleeve detail.";

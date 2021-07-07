@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
 import DriverInit.TestBase;
 import static org.junit.Assert.assertEquals;
 
-public class MainHoverElementsTest extends TestBase {
+public class TestMainHoverElements extends TestBase {
 
     protected String buttonMessageHover = "You hovered over the Button";
     protected String inputFieldMessage = "You hovered over the text field";

@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: demoQA.TestMainDynamicProperties
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 10.348 s <<< FAILURE! - in demoQA.TestMainDynamicProperties
+testDynamicProperties  Time elapsed: 10.344 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Color is not red ==> expected: <red> but was: <rgba(220, 53, 69, 1)>
+	at demoQA.TestMainDynamicProperties.testDynamicProperties(TestMainDynamicProperties.java:29)
+

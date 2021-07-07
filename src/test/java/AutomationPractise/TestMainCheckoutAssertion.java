@@ -5,7 +5,7 @@ import DriverInit.TestBase;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-public class MainCheckoutAssertionTest extends TestBase {
+public class TestMainCheckoutAssertion extends TestBase {
 
     protected String shoppingCartTitleText = "Faded Short Sleeve T-shirts";
     protected String shoppingCartAttrText = "Blue, M";

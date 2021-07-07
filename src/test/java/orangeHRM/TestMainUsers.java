@@ -7,7 +7,7 @@ import orangeHRMpom.SystemUsersPage;
 import DriverInit.TestBase;
 import org.junit.jupiter.api.Test;
 
-public class MainUsersTest extends TestBase {
+public class TestMainUsers extends TestBase {
 
     @Test
     public void testUsers() {
