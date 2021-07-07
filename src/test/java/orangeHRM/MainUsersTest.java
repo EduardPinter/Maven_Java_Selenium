@@ -1,17 +1,19 @@
 package orangeHRM;
 
+import orangeHRMpom.BasePage;
 import orangeHRMpom.LoginPage;
 import orangeHRMpom.MainPage;
 import orangeHRMpom.SystemUsersPage;
-import orangeHRMpom.TestBase;
-import org.junit.Test;
+import DriverInit.TestBase;
+import org.junit.jupiter.api.Test;
 
 public class MainUsersTest extends TestBase {
 
     @Test
     public void testUsers() {
 
-        LoginPage loginPage = new LoginPage(driver);
+        BasePage basePage = new BasePage(driver);
+        LoginPage loginPage = basePage.visitUrl();
         MainPage mainPage = loginPage.systemLogin();
         SystemUsersPage systemUsersPage = mainPage.clickViewSystemUsers();
         systemUsersPage.countLengthOfTable();

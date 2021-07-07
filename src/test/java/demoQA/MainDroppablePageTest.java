@@ -1,16 +1,19 @@
 package demoQA;
 
+import demoQApom.BasePage;
 import demoQApom.DroppablePage;
 import demoQApom.InteractionsPage;
 import demoQApom.MainPage;
-import demoQApom.TestBase;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
+import DriverInit.TestBase;
 
 public class MainDroppablePageTest extends TestBase {
 
     @Test
     public void testDroppableElement() {
-        MainPage mainPage = new MainPage(driver);
+
+        BasePage basePage = new BasePage(driver);
+        MainPage mainPage = basePage.visitUrl();
         InteractionsPage interactionsPage = mainPage.clickOnInteractions();
         DroppablePage droppablePage = interactionsPage.clickOnDroppablePage();
         droppablePage.dragAndDropElement();

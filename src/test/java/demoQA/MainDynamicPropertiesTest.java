@@ -1,12 +1,13 @@
 package demoQA;
 
+import demoQApom.BasePage;
 import demoQApom.DynamicPropertiesPage;
 import demoQApom.ElementsPage;
 import demoQApom.MainPage;
-import demoQApom.TestBase;
-import org.junit.Test;
+import DriverInit.TestBase;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.jupiter.api.Assertions.*;
 
 
 public class MainDynamicPropertiesTest extends TestBase {
@@ -17,15 +18,16 @@ public class MainDynamicPropertiesTest extends TestBase {
     @Test
     public void testDynamicProperties() {
 
-        MainPage mainPage = new MainPage(driver);
+        BasePage basePage = new BasePage(driver);
+        MainPage mainPage = basePage.visitUrl();
         ElementsPage elementsPage = mainPage.clickOnElements();
         DynamicPropertiesPage dpp = elementsPage.clickOnDynamicProperties();
-        assertEquals("Actual result is not the same as expected", randomText, dpp.getRandomText());
+        assertEquals(randomText, dpp.getRandomText(), "Actual result is not the same as expected");
         dpp.visibleAfterException();
-        assertFalse("Button is true", dpp.getEnableButtonFalse());
-        assertTrue("Button is false", dpp.getEnableButtonTrue());
-        assertEquals("Color is not red", colorValue, dpp.getColorAssert());
-        assertTrue("Button is False", dpp.visibleAfterTrue());
+        assertFalse(dpp.getEnableButtonFalse(), "Button is true");
+        assertTrue(dpp.getEnableButtonTrue(), "Button is false");
+        assertEquals(colorValue, dpp.getColorAssert(), "Color is not red");
+        assertTrue(dpp.visibleAfterTrue(), "Button is False");
 
     }
 

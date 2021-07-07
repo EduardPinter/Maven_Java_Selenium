@@ -1,11 +1,12 @@
 package demoQA;
 
+import demoQApom.BasePage;
 import demoQApom.MainPage;
-import demoQApom.TestBase;
 import demoQApom.ToolTipPage;
 import demoQApom.WidgetsPage;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
+import DriverInit.TestBase;
 import static org.junit.Assert.assertEquals;
 
 public class MainHoverElementsTest extends TestBase {
@@ -16,12 +17,13 @@ public class MainHoverElementsTest extends TestBase {
     @Test
     public void testHoverElements() {
 
-        MainPage mainPage = new MainPage(driver);
+        BasePage basePage = new BasePage(driver);
+        MainPage mainPage = basePage.visitUrl();
         WidgetsPage widgetsPage = mainPage.clickOnWidgets();
         ToolTipPage toolTipPage = widgetsPage.clickOnToolTip();
         toolTipPage.hoverButton();
-        assertEquals("Actual result is not the same as expected", buttonMessageHover, toolTipPage.getButtonText());
+        Assertions.assertEquals(buttonMessageHover, toolTipPage.getButtonText(), "Actual result is not the same as expected");
         toolTipPage.hoverInputField();
-        assertEquals("Actual result is not the same as expected", inputFieldMessage, toolTipPage.getInputFieldMessage());
+        Assertions.assertEquals(inputFieldMessage, toolTipPage.getInputFieldMessage(), "Actual result is not the same as expected");
     }
 }

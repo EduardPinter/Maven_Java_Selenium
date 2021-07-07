@@ -15,7 +15,7 @@ public class CheckoutPaymentPage {
     protected WebElement summaryProductTitle;
     @FindBy(id = "total_product")
     protected WebElement summaryTotalPrice;
-    @FindBy(css = "div#center_column  a[title='Proceed to checkout'] > span")
+    @FindBy(css = "div#center_column  a[title='Proceed to checkout'] > span") // pogledati ovaj css path
     protected WebElement proceedToCheckout;
 
     public CheckoutPaymentPage(WebDriver driver) {

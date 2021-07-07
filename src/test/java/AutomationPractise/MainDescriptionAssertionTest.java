@@ -1,12 +1,13 @@
 package AutomationPractise;
 
+import AutomationPractisePOM.BasePage;
 import AutomationPractisePOM.MainPage;
 import AutomationPractisePOM.SearchPage;
-import AutomationPractisePOM.TestBase;
-import org.junit.Assert;
-import org.junit.Test;
+import DriverInit.TestBase;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
-public class MainDescriptionAssertationTest extends TestBase {
+public class MainDescriptionAssertionTest extends TestBase {
 
     protected String word = "blouse";
     protected String blouseItemDescriptionText = "Short sleeved blouse with feminine draped sleeve detail.";
@@ -14,13 +15,14 @@ public class MainDescriptionAssertationTest extends TestBase {
     @Test
     public void testDescriptionAssertation() {
 
-        MainPage mainPage = new MainPage(driver);
+        BasePage basePage = new BasePage(driver);
+        MainPage mainPage = basePage.visitUrl();
         mainPage.searchBarSendKeys(word);
         SearchPage searchPage = mainPage.clickSearchButton();
         searchPage.hoverBlouseItem();
         searchPage.clickQuickView();
         searchPage.switchToIframe();
-        Assert.assertEquals("Expected item desc is not the same as actual", blouseItemDescriptionText, searchPage.getBlouseDesc());
+        Assertions.assertEquals(blouseItemDescriptionText, searchPage.getBlouseDesc(), "Expected item desc is not the same as actual");
 
     }
 }

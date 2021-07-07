@@ -1,20 +1,19 @@
-package demoQApom;
+package DriverInit;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.junit.After;
-import org.junit.Before;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 
 public class TestBase {
 
-    public static WebDriver driver;
+    protected WebDriver driver;
 
-    @Before
+    @BeforeEach
     public void initializeWebDriver() throws IOException {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
@@ -23,12 +22,11 @@ public class TestBase {
 
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
 
-        driver.get("https://demoqa.com/");
     }
 
-    @After
+    @AfterEach
     public void quitDriver() throws InterruptedException {
-        Thread.sleep(3000);
+        Thread.sleep(2000);
         driver.quit();
     }
 }
