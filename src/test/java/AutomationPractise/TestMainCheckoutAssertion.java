@@ -1,7 +1,7 @@
 package AutomationPractise;
 
-import AutomationPractisePOM.*;
-import DriverInit.TestBase;
+import automationPractisePOM.*;
+import driverInit.TestBase;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

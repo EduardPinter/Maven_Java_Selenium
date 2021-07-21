@@ -1,5 +1,6 @@
 package orangeHRMpom;
 
+import demoQApom.UploadPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -7,10 +8,13 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class MainPage {
 
     protected WebDriver driver;
+    private final Logger log = LoggerFactory.getLogger(MainPage.class);
 
     @FindBy(id = "menu_admin_viewAdminModule")
     WebElement navAdminModule;
@@ -27,6 +31,8 @@ public class MainPage {
     }
 
     public SystemUsersPage clickViewSystemUsers() {
+        log.info("Clicking on View System Users");
+        log.info("==========================================");
         WebDriverWait wait = new WebDriverWait(driver, 3);
         wait.until(ExpectedConditions.visibilityOf(navAdminModule));
         Actions actions = new Actions(driver);
@@ -38,6 +44,8 @@ public class MainPage {
     }
 
     public MyInfoPage clickMyInfo() {
+        log.info("Clicking on My Info");
+        log.info("==========================================");
         WebDriverWait wait = new WebDriverWait(driver, 3);
         wait.until(ExpectedConditions.visibilityOf(navMyDetails));
         navMyDetails.click();

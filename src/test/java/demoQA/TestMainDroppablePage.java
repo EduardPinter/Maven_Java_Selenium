@@ -5,7 +5,7 @@ import demoQApom.DroppablePage;
 import demoQApom.InteractionsPage;
 import demoQApom.MainPage;
 import org.junit.jupiter.api.Test;
-import DriverInit.TestBase;
+import driverInit.TestBase;
 
 public class TestMainDroppablePage extends TestBase {
 

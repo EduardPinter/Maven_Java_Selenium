@@ -7,12 +7,14 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 
 public class ToolTipPage {
 
     protected WebDriver driver;
-
+    private final Logger log = LoggerFactory.getLogger(ToolTipPage.class);
 
     @FindBy(id = "toolTipButton")
     WebElement toolTipBtn;
@@ -29,6 +31,8 @@ public class ToolTipPage {
     }
 
     public void hoverButton() {
+        log.info("Hovering over a button");
+        log.info("==========================================");
         Actions action = new Actions(driver);
         action.moveToElement(toolTipBtn).perform();
         WebDriverWait wait = new WebDriverWait(driver, 5);
@@ -36,10 +40,14 @@ public class ToolTipPage {
     }
 
     public String getButtonText() {
+        log.info("Getting button hover text message");
+        log.info("==========================================");
         return btnMessage.getText();
     }
 
     public void hoverInputField() {
+        log.info("Hovering over a input field");
+        log.info("==========================================");
         Actions action = new Actions(driver);
         action.moveToElement(textField).perform();
         WebDriverWait wait = new WebDriverWait(driver, 5);
@@ -47,6 +55,8 @@ public class ToolTipPage {
     }
 
     public String getInputFieldMessage() {
+        log.info("Getting input field hover text message");
+        log.info("==========================================");
         return textFieldMessage.getText();
     }
 

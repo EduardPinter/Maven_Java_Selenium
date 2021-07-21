@@ -4,7 +4,7 @@ import orangeHRMpom.BasePage;
 import orangeHRMpom.LoginPage;
 import orangeHRMpom.MainPage;
 import orangeHRMpom.MyInfoPage;
-import DriverInit.TestBase;
+import driverInit.TestBase;
 import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

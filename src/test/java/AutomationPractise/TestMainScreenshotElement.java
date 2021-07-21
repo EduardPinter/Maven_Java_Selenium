@@ -1,8 +1,8 @@
 package AutomationPractise;
 
-import AutomationPractisePOM.BasePage;
-import AutomationPractisePOM.MainPage;
-import DriverInit.TestBase;
+import automationPractisePOM.BasePage;
+import automationPractisePOM.MainPage;
+import driverInit.TestBase;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

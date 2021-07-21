@@ -6,8 +6,7 @@ import demoQApom.ToolTipPage;
 import demoQApom.WidgetsPage;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import DriverInit.TestBase;
-import static org.junit.Assert.assertEquals;
+import driverInit.TestBase;
 
 public class TestMainHoverElements extends TestBase {
 

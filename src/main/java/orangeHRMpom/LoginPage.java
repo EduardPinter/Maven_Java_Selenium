@@ -1,15 +1,19 @@
 package orangeHRMpom;
 
+import demoQApom.UploadPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class LoginPage {
 
     protected WebDriver driver;
     protected String usernameInput = "Admin";
     protected String passwordInput = "admin123";
+    private final Logger log = LoggerFactory.getLogger(LoginPage.class);
 
     @FindBy(id = "txtUsername")
     WebElement username;
@@ -24,6 +28,8 @@ public class LoginPage {
     }
 
     public MainPage systemLogin() {
+        log.info("Loggin into the page");
+        log.info("==========================================");
         username.sendKeys(usernameInput);
         password.sendKeys(passwordInput);
         loginButton.click();
