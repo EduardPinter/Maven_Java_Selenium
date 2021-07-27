@@ -1,6 +1,7 @@
 package orangeHRMpom;
 
 import demoQApom.UploadPage;
+import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -30,6 +31,7 @@ public class MainPage {
         PageFactory.initElements(driver, this);
     }
 
+    @Step("Clicking on View System Users")
     public SystemUsersPage clickViewSystemUsers() {
         log.info("Clicking on View System Users");
         log.info("==========================================");
@@ -43,6 +45,7 @@ public class MainPage {
         return new SystemUsersPage(driver);
     }
 
+    @Step("Clicking on My Info")
     public MyInfoPage clickMyInfo() {
         log.info("Clicking on My Info");
         log.info("==========================================");

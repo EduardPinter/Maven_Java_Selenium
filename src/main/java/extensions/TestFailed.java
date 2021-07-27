@@ -1,6 +1,8 @@
 package extensions;
 
 import driverInit.TestBase;
+import io.qameta.allure.Allure;
+import io.qameta.allure.Attachment;
 import org.apache.commons.io.FileUtils;
 import org.junit.jupiter.api.extension.ExtensionContext;
 import org.junit.jupiter.api.extension.TestWatcher;
@@ -11,6 +13,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 
 public class TestFailed implements TestWatcher {
@@ -22,11 +26,9 @@ public class TestFailed implements TestWatcher {
         log.info("Assertion Failed : \n {} ", cause.getMessage());
         log.info("==========================================");
         final TestBase testBase = (TestBase) context.getRequiredTestInstance();
-        final File screenshot = createScreenshotOfWindow(testBase.getDriver());
-        File destFile = new File("/home/edi/IdeaProjects/Maven_Java_Selenium/FailedScreenshot" + "/" + context.getDisplayName());
         try {
-            FileUtils.copyFileToDirectory(screenshot, destFile);
-        } catch (IOException e) {
+            makingAFile(testBase.getDriver(), context.getDisplayName());
+        } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
         log.info("***** Error " + context.getDisplayName() + " test has failed ******");
@@ -35,8 +37,22 @@ public class TestFailed implements TestWatcher {
         log.info("==========================================");
     }
 
-    public File createScreenshotOfWindow(WebDriver driver) {
-        return ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+    public File createScreenshotOfWindow(WebDriver driver, String testName) throws FileNotFoundException {
+        File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+        Allure.addAttachment(testName + "-Screenshot", new FileInputStream(screenshot)); // bypass adding one more attachment with one line code
+        return screenshot;
+    }
+
+    public void makingAFile(WebDriver driver, String name) throws FileNotFoundException {
+
+        final File screenshot = createScreenshotOfWindow(driver, name);
+        File destFile = new File("/home/edi/IdeaProjects/Maven_Java_Selenium/FailedScreenshot" + "/" + name);
+        try {
+            FileUtils.copyFileToDirectory(screenshot, destFile);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
     }
 
 }

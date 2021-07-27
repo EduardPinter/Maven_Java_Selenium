@@ -1,20 +1,19 @@
 package extensions;
 
 import driverInit.TestBase;
+import io.qameta.allure.Allure;
+import io.qameta.allure.Attachment;
 import org.junit.jupiter.api.extension.ExtensionContext;
 import org.junit.jupiter.api.extension.TestWatcher;
-import org.openqa.selenium.logging.LogEntries;
-import org.openqa.selenium.logging.LogEntry;
-import org.openqa.selenium.logging.LogType;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.slf4j.MDC;
 
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.PrintStream;
-import java.util.List;
+import java.io.IOException;
+
 
 public class DriverQuit implements TestWatcher {
 
@@ -25,7 +24,15 @@ public class DriverQuit implements TestWatcher {
         final TestBase testBase = (TestBase) context.getRequiredTestInstance();
         testBase.getDriver().quit();
         log.info("Test was successful, test name : " + testBase);
+        log.info("\n ###############################################################################################################################");
+        File file = new File("LoggingFolder/" + MDC.get("folderName") + "/" + MDC.get("folderName") + ".log");
+        try {
+            Allure.addAttachment("LoggingFile", new FileInputStream(file));
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
         MDC.remove("methodName");
+        MDC.remove("folderName");
         MDC.clear();
     }
 
@@ -34,10 +41,18 @@ public class DriverQuit implements TestWatcher {
         final TestBase testBase = (TestBase) context.getRequiredTestInstance();
         testBase.getDriver().quit();
         log.info("Test failed, test name : " + testBase);
+        log.info("\n ###############################################################################################################################");
+        File file = new File("LoggingFolder/" + MDC.get("folderName") + "/" + MDC.get("folderName") + ".log");
+        try {
+            Allure.addAttachment("LoggingFile", new FileInputStream(file));
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
         MDC.remove("methodName");
         MDC.remove("folderName");
         MDC.clear();
-
     }
+
+
 
 }

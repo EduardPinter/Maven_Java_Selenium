@@ -8,9 +8,6 @@
         </layout>
     </appender>
 
-    <!-- <property name="methodName" value="extensions/GetTestName.java" /> -->
-    <timestamp key="bySecond" datePattern="ddMMyyyy'T'HHmmss"/>
-
     <appender name="SIFT" class="ch.qos.logback.classic.sift.SiftingAppender">
         <discriminator>
             <key>folderName</key>
@@ -18,7 +15,7 @@
         </discriminator>
         <sift>
             <appender name="FILE-${folderName}" class="ch.qos.logback.core.FileAppender">
-                <file>LoggingFolder/${folderName}/${folderName}--${bySecond}.log</file>
+                <file>LoggingFolder/${folderName}/${folderName}.log</file>
                 <layout class="ch.qos.logback.classic.PatternLayout">
                     <pattern>%d{MM-dd-yyyy HH:mm:ss.SSS} - %X{methodName} - [%thread] - %msg%n%xThrowable{full}
                     </pattern>

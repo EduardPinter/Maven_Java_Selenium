@@ -1,5 +1,6 @@
 package demoQApom;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -24,6 +25,7 @@ public class ElementsPage {
         PageFactory.initElements(driver, this);
     }
 
+    @Step("Clicking on Dynamic Properties page")
     public DynamicPropertiesPage clickOnDynamicProperties() {
         log.info("Clicking on Dynamic Properties page");
         log.info("==========================================");
@@ -32,6 +34,7 @@ public class ElementsPage {
         return new DynamicPropertiesPage(driver);
     }
 
+    @Step("Clicking on Upload segment of page")
     public UploadPage clickOnUpload() {
         log.info("Clicking on Upload segment of page");
         log.info("==========================================");

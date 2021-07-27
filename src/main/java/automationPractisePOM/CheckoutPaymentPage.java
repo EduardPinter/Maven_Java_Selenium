@@ -1,6 +1,7 @@
 package automationPractisePOM;
 
 import demoQApom.UploadPage;
+import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -19,7 +20,7 @@ public class CheckoutPaymentPage {
     protected WebElement summaryProductTitle;
     @FindBy(id = "total_product")
     protected WebElement summaryTotalPrice;
-    @FindBy(css = "a[title='Proceed to checkout']") // pogledati ovaj css path
+    @FindBy(css = "div#center_column  a[title='Proceed to checkout'] > span") // pogledati ovaj css path
     protected WebElement proceedToCheckout;
 
     public CheckoutPaymentPage(WebDriver driver) {
@@ -27,24 +28,28 @@ public class CheckoutPaymentPage {
         PageFactory.initElements(driver, this);
     }
 
+    @Step("Getting Summary Product Attributes text")
     public String getSummaryProductAttrText() {
         log.info("Getting Summary Product Attributes text");
         log.info("==========================================");
         return summaryProductAttr.getText();
     }
 
+    @Step("Getting Summary Product Title text")
     public String getSummaryProductTitleText() {
         log.info("Getting Summary Product Title text");
         log.info("==========================================");
         return summaryProductTitle.getText();
     }
 
+    @Step("Getting Summary total price text")
     public String getSummaryTotalPriceText() {
         log.info("Getting Summary total price text");
         log.info("==========================================");
         return summaryTotalPrice.getText();
     }
 
+    @Step("Clicking on Proceed to Checkout Page")
     public ProceedCheckoutPage clickOnProceed() {
         log.info("Clicking on Proceed to Checkout Page");
         log.info("==========================================");

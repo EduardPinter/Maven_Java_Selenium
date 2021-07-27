@@ -1,6 +1,7 @@
 package automationPractisePOM;
 
 import demoQApom.UploadPage;
+import io.qameta.allure.Step;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebDriver;
@@ -44,6 +45,7 @@ public class MainPage {
         PageFactory.initElements(driver, this);
     }
 
+    @Step("Hovering over 'Women' navigation link")
     public void hoverWomenSection() {
         log.info("Hovering over 'Women' navigation link");
         log.info("==========================================");
@@ -53,6 +55,7 @@ public class MainPage {
         wait.until(ExpectedConditions.elementToBeClickable(tshirtSection));
     }
 
+    @Step("Clicking Tshirt section")
     public TshirtsPage clickTshirtSection() {
         log.info("Clicking Tshirt section");
         log.info("==========================================");
@@ -60,12 +63,14 @@ public class MainPage {
         return new TshirtsPage(driver);
     }
 
+    @Step("Search bar typing word")
     public void searchBarSendKeys(String word) {
         log.info("Search bar typing word");
         log.info("==========================================");
         searchInputField.sendKeys(word);
     }
 
+    @Step("Clicking search button")
     public SearchPage clickSearchButton() {
         log.info("Clicking search button");
         log.info("==========================================");
@@ -73,6 +78,7 @@ public class MainPage {
         return new SearchPage(driver);
     }
 
+    @Step("Clicking slider next button")
     public void clickNextButtonSlider() throws InterruptedException {
         log.info("Clicking slider next button");
         log.info("==========================================");
@@ -80,18 +86,21 @@ public class MainPage {
         Thread.sleep(1000);
     }
 
+    @Step("Getting slider css property")
     public String getSliderCssProperty() {
         log.info("Getting slider css property");
         log.info("==========================================");
         return sliderSelector.getCssValue("left");
     }
 
+    @Step("Getting current slider picture source attribute")
     public String getSrcAttribute() {
         log.info("Getting current slider picture source attribute");
         log.info("==========================================");
         return srcRedDress.getAttribute("src");
     }
 
+    @Step("Screenshoting the Element")
     public void screenshotElement() throws IOException {
         log.info("Screenshoting the Element");
         log.info("==========================================");

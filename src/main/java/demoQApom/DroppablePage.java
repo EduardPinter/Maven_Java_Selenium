@@ -1,5 +1,6 @@
 package demoQApom;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Action;
@@ -24,6 +25,7 @@ public class DroppablePage {
         PageFactory.initElements(driver, this);
     }
 
+    @Step("Drag and Drop element")
     public void dragAndDropElement() { // Doesnt work, needs a fix
         log.info("Drag and Drop element");
         log.info("==========================================");

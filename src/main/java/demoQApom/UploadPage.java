@@ -1,5 +1,6 @@
 package demoQApom;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -22,12 +23,14 @@ public class UploadPage {
         PageFactory.initElements(driver, this);
     }
 
+    @Step("Uploading a file")
     public void uploadFileSendKeys() {
         log.info("Uploading a file");
         log.info("==========================================");
         uploadFile.sendKeys(filePath);
     }
 
+    @Step("Getting the message about the upload")
     public String getMessageText() {
         log.info("Getting the message about the upload");
         log.info("==========================================");

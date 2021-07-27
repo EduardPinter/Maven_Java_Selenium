@@ -1,6 +1,7 @@
 package automationPractisePOM;
 
 import demoQApom.UploadPage;
+import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -42,6 +43,7 @@ public class FadedTshirtPage {
         PageFactory.initElements(driver, this);
     }
 
+    @Step("Picking size")
     public void pickSize() {
         log.info("Picking size");
         log.info("==========================================");
@@ -49,12 +51,14 @@ public class FadedTshirtPage {
         dropSize.selectByVisibleText("M");
     }
 
+    @Step("Picking color")
     public void pickColor() {
         log.info("Picking color");
         log.info("==========================================");
         color.click();
     }
 
+    @Step("Entering quantity of shirts")
     public void enterQuantity(String quantityNumber) {
         log.info("Entering quantity of shirts");
         log.info("==========================================");
@@ -62,6 +66,7 @@ public class FadedTshirtPage {
         quantity.sendKeys(quantityNumber);
     }
 
+    @Step("Clicking on add to cart")
     public void addToCartClick() {
         log.info("Clicking on add to cart");
         log.info("==========================================");
@@ -70,31 +75,35 @@ public class FadedTshirtPage {
         wait.until(ExpectedConditions.visibilityOf(shoppingCartTitle));
     }
 
-
+    @Step("Getting shopping cart title text")
     public String getShoppingCartTitleText() {
         log.info("Getting shopping cart title text");
         log.info("==========================================");
         return shoppingCartTitle.getText();
     }
 
+    @Step("Getting shopping cart attributes text")
     public String getShoppingCartAttrText() {
         log.info("Getting shopping cart attributes text");
         log.info("==========================================");
         return shoppingCartAttr.getText();
     }
 
+    @Step("Getting shopping cart quantity text")
     public String getShoppingCartQuantityText() {
         log.info("Getting shopping cart quantity text");
         log.info("==========================================");
         return shoppingCartQuantity.getText();
     }
 
+    @Step("Getting shopping cart price text")
     public String getShoppingCartCostText() {
         log.info("Getting shopping cart price text");
         log.info("==========================================");
         return shoppingCartPrice.getText();
     }
 
+    @Step("Proceeding to Checkout Payment Page")
     public CheckoutPaymentPage proceedToCheckoutClick() {
         log.info("Proceeding to Checkout Payment Page");
         log.info("==========================================");

@@ -1,5 +1,6 @@
 package orangeHRMpom;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -24,6 +25,7 @@ public class SystemUsersPage {
         PageFactory.initElements(driver, this);
     }
 
+    @Step("Counting length of the table")
     public void countLengthOfTable() {
         log.info("Counting length of the table");
         log.info("==========================================");
@@ -31,6 +33,7 @@ public class SystemUsersPage {
         log.info("Number of names on the first page is : " + counter);
     }
 
+    @Step("Printing names from the table on the 1st page")
     public void printNames() {
         log.info("Printing names from the table on the 1st page");
         log.info("==========================================");

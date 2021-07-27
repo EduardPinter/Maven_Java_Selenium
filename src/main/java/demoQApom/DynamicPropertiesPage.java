@@ -1,5 +1,6 @@
 package demoQApom;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -30,12 +31,14 @@ public class DynamicPropertiesPage {
         PageFactory.initElements(driver, this);
     }
 
+    @Step("Getting page's random text")
     public String getRandomText() {
         log.info("Getting page's random text");
         log.info("==========================================");
         return randomTextId.getText();
     }
 
+    @Step("Checking if button is visible, not found")
     public void visibleAfterException() {
         log.info("Checking if button is visible, not found");
         log.info("==========================================");
@@ -46,6 +49,7 @@ public class DynamicPropertiesPage {
         }
     }
 
+    @Step("Checking if button is enabled, FALSE")
     public Boolean getEnableButtonFalse() {
         log.info("Checking if button is enabled, FALSE");
         log.info("==========================================");
@@ -53,6 +57,7 @@ public class DynamicPropertiesPage {
         return enableButton.isEnabled();
     }
 
+    @Step("Checking if button is enabled, TRUE")
     public Boolean getEnableButtonTrue() {
         log.info("Checking if button is enabled, TRUE");
         log.info("==========================================");
@@ -62,12 +67,14 @@ public class DynamicPropertiesPage {
         return enableButton.isEnabled();
     }
 
+    @Step("Getting color for assertion")
     public String getColorAssert() {
         log.info("Getting color for assertion");
         log.info("==========================================");
         return colorChange.getCssValue("color");
     }
 
+    @Step("Checking if button is visible, TRUE")
     public Boolean visibleAfterTrue() {
         log.info("Checking if button is visible, TRUE");
         log.info("==========================================");

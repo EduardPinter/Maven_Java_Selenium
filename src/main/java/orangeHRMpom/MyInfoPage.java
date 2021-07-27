@@ -1,6 +1,7 @@
 package orangeHRMpom;
 
 import demoQApom.UploadPage;
+import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -44,42 +45,49 @@ public class MyInfoPage {
         PageFactory.initElements(driver, this);
     }
 
+    @Step("Getting First Name Value")
     public String getFirstNameValue() {
         log.info("Getting First Name Value");
         log.info("==========================================");
         return firstName.getAttribute("value");
     }
 
+    @Step("Getting Middle Name Value")
     public String getMiddleNameValue() {
         log.info("Getting Middle Name Value");
         log.info("==========================================");
         return middleName.getAttribute("value");
     }
 
+    @Step("Getting Last Name Value")
     public String getLastNameValue() {
         log.info("Getting Last Name Value");
         log.info("==========================================");
         return lastName.getAttribute("value");
     }
 
+    @Step("Getting Employee id")
     public String getEmployeeId() {
         log.info("Getting Employee id");
         log.info("==========================================");
         return employeeId.getAttribute("value");
     }
 
+    @Step("Getting birth date")
     public String getBirthDate() {
         log.info("Getting birth date");
         log.info("==========================================");
         return birthDate.getAttribute("value");
     }
 
+    @Step("Getting licence expiry date")
     public String getLicenceExpiryDate() {
         log.info("Getting licence expiry date");
         log.info("==========================================");
         return licenceExpiryDate.getAttribute("value");
     }
 
+    @Step("Getting Marital Status")
     public String getMaritalStatus() {
         log.info("Getting Marital Status");
         log.info("==========================================");
@@ -87,6 +95,7 @@ public class MyInfoPage {
         return select.getFirstSelectedOption().getText();
     }
 
+    @Step("Getting Nationality")
     public String getNationality() {
         log.info("Getting Nationality");
         log.info("==========================================");
@@ -94,6 +103,7 @@ public class MyInfoPage {
         return select.getFirstSelectedOption().getText();
     }
 
+    @Step("Checking the persons gender")
     public String checkedGender() {
         log.info("Checking the persons gender");
         log.info("==========================================");

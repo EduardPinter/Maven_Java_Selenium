@@ -1,5 +1,6 @@
 package demoQApom;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -30,6 +31,7 @@ public class ToolTipPage {
         PageFactory.initElements(driver, this);
     }
 
+    @Step("Hovering over a button")
     public void hoverButton() {
         log.info("Hovering over a button");
         log.info("==========================================");
@@ -39,12 +41,14 @@ public class ToolTipPage {
         wait.until(ExpectedConditions.visibilityOf(btnMessage));
     }
 
+    @Step("Getting button hover text message")
     public String getButtonText() {
         log.info("Getting button hover text message");
         log.info("==========================================");
         return btnMessage.getText();
     }
 
+    @Step("Hovering over a input field")
     public void hoverInputField() {
         log.info("Hovering over a input field");
         log.info("==========================================");
@@ -54,6 +58,7 @@ public class ToolTipPage {
         wait.until(ExpectedConditions.visibilityOf(textFieldMessage));
     }
 
+    @Step("Getting input field hover text message")
     public String getInputFieldMessage() {
         log.info("Getting input field hover text message");
         log.info("==========================================");

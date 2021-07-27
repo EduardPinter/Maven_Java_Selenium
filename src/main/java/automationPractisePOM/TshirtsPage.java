@@ -1,6 +1,7 @@
 package automationPractisePOM;
 
 import demoQApom.UploadPage;
+import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -22,6 +23,7 @@ public class TshirtsPage {
         PageFactory.initElements(driver, this);
     }
 
+    @Step("Clicking on Faded Short Sleeve Shirt")
     public FadedTshirtPage clickOnFadedShortSleeve() {
         log.info("Clicking on Faded Short Sleeve Shirt");
         log.info("==========================================");

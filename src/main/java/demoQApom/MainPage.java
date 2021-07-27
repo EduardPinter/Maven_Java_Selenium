@@ -1,5 +1,6 @@
 package demoQApom;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -24,21 +25,21 @@ public class MainPage {
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }
-
+    @Step("Clicking on Elements section")
     public ElementsPage clickOnElements() {
         log.info("Clicking on Elements Page");
         log.info("==========================================");
         elementsPage.click();
         return new ElementsPage(driver);
     }
-
+    @Step("Clicking on Widgets section")
     public WidgetsPage clickOnWidgets() {
         log.info("Clicking on Widgets Page");
         log.info("==========================================");
         widgetsPage.click();
         return new WidgetsPage(driver);
     }
-
+    @Step("Clicking on Interactions section")
     public InteractionsPage clickOnInteractions() {
         log.info("Clicking on Interactions Page");
         log.info("==========================================");

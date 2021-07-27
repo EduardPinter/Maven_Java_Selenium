@@ -1,6 +1,7 @@
 package orangeHRMpom;
 
 import demoQApom.UploadPage;
+import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -27,6 +28,7 @@ public class LoginPage {
         PageFactory.initElements(driver, this);
     }
 
+    @Step("Loggin into the page")
     public MainPage systemLogin() {
         log.info("Loggin into the page");
         log.info("==========================================");

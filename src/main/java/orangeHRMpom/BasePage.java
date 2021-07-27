@@ -1,6 +1,7 @@
 package orangeHRMpom;
 
 import demoQApom.UploadPage;
+import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.slf4j.Logger;
@@ -16,6 +17,7 @@ public class BasePage {
         PageFactory.initElements(driver, this);
     }
 
+    @Step("Visiting the Page url")
     public LoginPage visitUrl() {
         log.info("Visiting the Page url");
         log.info("==========================================");

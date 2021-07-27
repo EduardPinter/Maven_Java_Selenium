@@ -1,5 +1,6 @@
 package demoQApom;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -21,6 +22,7 @@ public class WidgetsPage {
         PageFactory.initElements(driver, this);
     }
 
+    @Step("Clicking on ToolTip page")
     public ToolTipPage clickOnToolTip() {
         log.info("Clicking on ToolTip page");
         log.info("==========================================");

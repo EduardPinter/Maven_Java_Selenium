@@ -1,6 +1,7 @@
 package automationPractisePOM;
 
 import demoQApom.UploadPage;
+import io.qameta.allure.Step;
 import org.jsoup.Connection;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
@@ -17,6 +18,7 @@ public class BasePage {
         PageFactory.initElements(driver, this);
     }
 
+    @Step("Visiting the url of the page")
     public MainPage visitUrl() {
         log.info("Visiting the page url");
         log.info("==========================================");

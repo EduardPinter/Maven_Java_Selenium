@@ -42,6 +42,7 @@ public class TestBase {
             default:
                 throw new RuntimeException("Unsupported browser! Will not start any browser!");
         }
+
 /*        String retVal = "";
         log.info(Runtime.getRuntime().toString() + "++++++++++++++++++");
         StackTraceElement[] trace = (new Throwable()).getStackTrace();
@@ -64,6 +65,7 @@ public class TestBase {
         System.setOut(fileOutputStream);*/
 
     }
+
 
     public void getChromeDriver() {
 

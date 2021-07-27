@@ -1,5 +1,6 @@
 package demoQApom;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -21,6 +22,7 @@ public class InteractionsPage {
         PageFactory.initElements(driver, this);
     }
 
+    @Step("Clicking on Droppable Page")
     public DroppablePage clickOnDroppablePage() {
         log.info("Clicking on Droppable Page");
         log.info("==========================================");

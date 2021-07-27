@@ -1,6 +1,7 @@
 package automationPractisePOM;
 
 import demoQApom.UploadPage;
+import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.slf4j.Logger;
@@ -17,12 +18,14 @@ public class ProceedCheckoutPage {
         PageFactory.initElements(driver, this);
     }
 
+    @Step("Getting Page url")
     public String getPageUrl() {
         log.info("Getting Page url");
         log.info("==========================================");
         return driver.getCurrentUrl();
     }
 
+    @Step("Getting Page title")
     public String getPageTitle() {
         log.info("Getting Page title");
         log.info("==========================================");

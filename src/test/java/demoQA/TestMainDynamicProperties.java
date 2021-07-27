@@ -12,7 +12,7 @@ import org.junit.jupiter.api.Test;
 public class TestMainDynamicProperties extends TestBase {
 
     protected String randomText = "This text has random Id";
-    protected String colorValue = "red";
+    protected String colorValue = "rgba(220, 53, 69, 1)";
 
     @Test
     public void testDynamicProperties() {

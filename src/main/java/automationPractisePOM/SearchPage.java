@@ -1,6 +1,7 @@
 package automationPractisePOM;
 
 import demoQApom.UploadPage;
+import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -31,12 +32,14 @@ public class SearchPage {
         PageFactory.initElements(driver, this);
     }
 
+    @Step("Switching to iframe window on the page")
     public void switchToIframe() {
         log.info("Switching to iframe window on the page");
         log.info("==========================================");
         driver.switchTo().frame(iFrame);
     }
 
+    @Step("Hovering over blouse item")
     public void hoverBlouseItem() {
         log.info("Hovering over blouse item");
         log.info("==========================================");
@@ -46,12 +49,14 @@ public class SearchPage {
         wait.until(ExpectedConditions.elementToBeClickable(quickView));
     }
 
+    @Step("Clicking quick view")
     public void clickQuickView() {
         log.info("Clicking quick view");
         log.info("==========================================");
         quickView.click();
     }
 
+    @Step("Getting blouse description for assertation")
     public String getBlouseDesc() {
         log.info("Getting blouse description for assertation");
         log.info("==========================================");
