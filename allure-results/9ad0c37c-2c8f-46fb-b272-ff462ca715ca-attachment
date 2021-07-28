@@ -1,0 +1,25 @@
+07-28-2021 09:30:06.172 - TestMainUpload-testUpload-testUpload() - [main] - Initializing the driver....
+07-28-2021 09:30:06.190 - TestMainUpload-testUpload-testUpload() - [main] - ==========================================
+07-28-2021 09:30:06.190 - TestMainUpload-testUpload-testUpload() - [main] - Firefox was chosen!
+07-28-2021 09:30:09.283 - TestMainUpload-testUpload-testUpload() - [main] - Using geckodriver 0.29.0 (resolved driver for Firefox 90)
+07-28-2021 09:30:09.365 - TestMainUpload-testUpload-testUpload() - [main] - Exporting webdriver.gecko.driver as /home/edi/.cache/selenium/geckodriver/linux64/0.29.0/geckodriver
+07-28-2021 09:30:23.850 - TestMainUpload-testUpload-testUpload() - [main] - Visiting page url
+07-28-2021 09:30:23.850 - TestMainUpload-testUpload-testUpload() - [main] - ==========================================
+07-28-2021 09:30:27.040 - TestMainUpload-testUpload-testUpload() - [main] - Clicking on Elements Page
+07-28-2021 09:30:27.041 - TestMainUpload-testUpload-testUpload() - [main] - ==========================================
+07-28-2021 09:30:27.377 - TestMainUpload-testUpload-testUpload() - [main] - Clicking on Upload segment of page
+07-28-2021 09:30:27.377 - TestMainUpload-testUpload-testUpload() - [main] - ==========================================
+07-28-2021 09:30:27.682 - TestMainUpload-testUpload-testUpload() - [main] - Uploading a file
+07-28-2021 09:30:27.682 - TestMainUpload-testUpload-testUpload() - [main] - ==========================================
+07-28-2021 09:30:27.719 - TestMainUpload-testUpload-testUpload() - [main] - Getting the message about the upload
+07-28-2021 09:30:27.719 - TestMainUpload-testUpload-testUpload() - [main] - ==========================================
+07-28-2021 09:30:27.786 - TestMainUpload-testUpload-testUpload() - [main] - Assertion Failed : 
+ Actual result is not the same as expected ==> expected: <C:\fakepath\imag.png> but was: <C:\fakepath\image.png> 
+07-28-2021 09:30:27.786 - TestMainUpload-testUpload-testUpload() - [main] - ==========================================
+07-28-2021 09:30:28.133 - TestMainUpload-testUpload-testUpload() - [main] - ***** Error testUpload() test has failed ******
+07-28-2021 09:30:28.134 - TestMainUpload-testUpload-testUpload() - [main] - ==========================================
+07-28-2021 09:30:28.134 - TestMainUpload-testUpload-testUpload() - [main] - Driver on which case test case failed : FirefoxDriver: firefox on LINUX (9e686bc9-0dde-41f5-b022-30ab943f1c6b)
+07-28-2021 09:30:28.134 - TestMainUpload-testUpload-testUpload() - [main] - ==========================================
+07-28-2021 09:30:29.440 - TestMainUpload-testUpload-testUpload() - [main] - Test failed, test name : demoQA.TestMainUpload@355493bf
+07-28-2021 09:30:29.440 - TestMainUpload-testUpload-testUpload() - [main] - 
+ ###############################################################################################################################

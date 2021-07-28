@@ -2,17 +2,14 @@ package extensions;
 
 import driverInit.TestBase;
 import io.qameta.allure.Allure;
-import io.qameta.allure.Attachment;
 import org.junit.jupiter.api.extension.ExtensionContext;
 import org.junit.jupiter.api.extension.TestWatcher;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.slf4j.MDC;
-
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-import java.io.IOException;
 
 
 public class DriverQuit implements TestWatcher {
