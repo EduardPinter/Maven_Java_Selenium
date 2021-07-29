@@ -20,7 +20,7 @@ public class TestMainUpload extends TestBase {
 
     //protected String filePath = "/home/edi/IdeaProjects/Maven_Java_Selenium/image.png";  // koristiti unutar ovog foldera
     //protected String alertMessageText = String.format("Thanks, you have selected %s file to Upload", filePath);
-    protected String fileName = "imag.png";
+    protected String fileName = "image.png";
     protected String realAllertMessage = String.format("C:\\fakepath\\%s", fileName);
     private final Logger log = LoggerFactory.getLogger(TestMainUpload.class);
 
