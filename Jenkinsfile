@@ -10,13 +10,31 @@ pipeline {
         }
 
         stage("test") {
-
+            when {
+                expression {
+                    BRANCH_NAME == 'maven'
+                }
+            }
             steps {
                 echo 'TESTING THE APPLICATION'
             }
         }
 
+    }
+    post {
+        always {
+        //
+        }
+        failure {
+        //
+        }
+        success {
+        //
+        }
+
 
     }
+
+
 
 }
