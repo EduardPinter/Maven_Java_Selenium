@@ -5,7 +5,8 @@ pipeline {
         stage("build") {
 
             steps {
-                echo 'BUILDING THE APPLICATION'
+                sh 'mvn clean test'
+                sh 'mvn clean test -Dbrowser=firefox'
             }
         }
 
