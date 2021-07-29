@@ -23,13 +23,13 @@ pipeline {
     }
     post {
         always {
-        //
+            echo 'ALWAYS COMPLETING'
         }
         failure {
-        //
+            echo 'FAILURE'
         }
         success {
-        //
+            echo 'SUCCESS'
         }
 
 
