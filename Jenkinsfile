@@ -3,7 +3,19 @@ pipeline {
     agent any
 
     stages {
-        stage("build") {
+
+        stage("Checking if branch name is Maven") {
+            when {
+                expression {
+                    BRANCH_NAME == 'maven'
+                }
+            }
+            steps {
+                echo 'TESTING THE APPLICATION'
+            }
+        }
+
+        stage("Chrome Testing") {
 
             steps {
                 script {
@@ -15,16 +27,8 @@ pipeline {
             }
         }
 
-        stage("test") {
-            when {
-                expression {
-                    BRANCH_NAME == 'maven'
-                }
-            }
-            steps {
-                echo 'TESTING THE APPLICATION'
-            }
-        }
+
+
 
     }
     post {
