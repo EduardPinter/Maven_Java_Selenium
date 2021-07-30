@@ -7,6 +7,9 @@ pipeline {
         stage("build") {
 
             steps {
+                script {
+                env.chromeTest = sh( 'mvn clean test' )
+                }
                 chromeTest
                // if()
               //  sh 'mvn clean test -Dbrowser=firefox'
