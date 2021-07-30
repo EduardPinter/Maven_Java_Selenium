@@ -1,4 +1,3 @@
-def chromeTest = sh( script: "mvn clean test", returnStdout: true).trim()
 
 pipeline {
     agent any
@@ -7,7 +6,10 @@ pipeline {
         stage("build") {
 
             steps {
-                echo "${chromeTest}"
+                script {
+                    CHROME_TEST = sh( script: "mvn clean test", returnStdout: true).trim()
+                }
+                echo "${CHROME_TEST}"
                // if()
               //  sh 'mvn clean test -Dbrowser=firefox'
             }
