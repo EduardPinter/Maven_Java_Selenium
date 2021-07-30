@@ -7,7 +7,7 @@ pipeline {
         stage("build") {
 
             steps {
-                echo chromeTest
+                echo "${chromeTest}"
                // if()
               //  sh 'mvn clean test -Dbrowser=firefox'
             }
