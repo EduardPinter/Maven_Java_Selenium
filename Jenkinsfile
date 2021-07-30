@@ -25,14 +25,16 @@ pipeline {
     post {
         always {
             echo 'ALWAYS COMPLETING'
+            script {
+                allure([
+                    includeProperties: false,
+                    jdk: '',
+                    properties: [],
+                    reportBuildPolicy: 'ALWAYS',
+                    results: [[path: 'target/allure-results']]
+                ])
+            }
         }
-        failure {
-            echo 'FAILURE'
-        }
-        success {
-            echo 'SUCCESS'
-        }
-
 
     }
 
