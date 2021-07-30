@@ -7,11 +7,11 @@ pipeline {
         stage("Checking if branch name is Maven") {
             when {
                 expression {
-                    env.BRANCH_NAME !== 'maven'
+                    BRANCH_NAME == 'maven'
                 }
             }
             steps {
-                error("Branch name is not maven " + env.BRANCH_NAME)
+                error("Branch name is not maven " + BRANCH_NAME)
             }
         }
 
