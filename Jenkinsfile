@@ -1,3 +1,5 @@
+def chromeTest = sh 'mvn clean test'
+
 pipeline {
     agent any
 
@@ -5,8 +7,9 @@ pipeline {
         stage("build") {
 
             steps {
-                sh 'mvn clean test'
-                sh 'mvn clean test -Dbrowser=firefox'
+                chromeTest
+               // if()
+              //  sh 'mvn clean test -Dbrowser=firefox'
             }
         }
 
