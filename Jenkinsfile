@@ -7,7 +7,7 @@ pipeline {
         stage("Checking if branch name is Maven") {
             when {
                 expression {
-                    BRANCH_NAME == 'maven'
+                    BRANCH_NAME == 'eee'
                 }
             }
             steps {
