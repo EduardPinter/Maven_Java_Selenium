@@ -4,14 +4,11 @@ pipeline {
 
     stages {
 
-        stage("Checking if branch name is Maven") {
-            when {
-                expression {
-                    BRANCH_NAME !== 'maven'
-                }
-            }
+        stage("Reporting which branch is the build on") {
             steps {
-                error("Branch name is not maven " + BRANCH_NAME)
+
+            echo BRANCH_NAME
+
             }
         }
 
@@ -22,8 +19,6 @@ pipeline {
                     CHROME_TEST = sh( script: "mvn clean test", returnStdout: true).trim()
                 }
                 echo "${CHROME_TEST}"
-               // if()
-              //  sh 'mvn clean test -Dbrowser=firefox'
             }
         }
 
