@@ -51,7 +51,7 @@ public class MainPage {
         log.info("==========================================");
         Actions actions = new Actions(driver);
         actions.moveToElement(womenNavigationLink).perform();
-        WebDriverWait wait = new WebDriverWait(driver, 3);
+        WebDriverWait wait = new WebDriverWait(driver, 10);
         wait.until(ExpectedConditions.elementToBeClickable(tshirtSection));
     }
 

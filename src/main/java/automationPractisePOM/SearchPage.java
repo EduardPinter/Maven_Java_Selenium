@@ -45,7 +45,7 @@ public class SearchPage {
         log.info("==========================================");
         Actions action = new Actions(driver);
         action.moveToElement(blouseItem).perform();
-        WebDriverWait wait = new WebDriverWait(driver, 5);
+        WebDriverWait wait = new WebDriverWait(driver, 10);
         wait.until(ExpectedConditions.elementToBeClickable(quickView));
     }
 

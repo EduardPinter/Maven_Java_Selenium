@@ -71,7 +71,7 @@ public class FadedTshirtPage {
         log.info("Clicking on add to cart");
         log.info("==========================================");
         addToCartButton.click();
-        WebDriverWait wait = new WebDriverWait(driver, 5);
+        WebDriverWait wait = new WebDriverWait(driver, 10);
         wait.until(ExpectedConditions.visibilityOf(shoppingCartTitle));
     }
 
@@ -108,7 +108,7 @@ public class FadedTshirtPage {
         log.info("Proceeding to Checkout Payment Page");
         log.info("==========================================");
         proceedToCheckout.click();
-        WebDriverWait wait = new WebDriverWait(driver, 5);
+        WebDriverWait wait = new WebDriverWait(driver, 10);
         wait.until(ExpectedConditions.visibilityOf(fadedShortSleeveLinkText));
         return new CheckoutPaymentPage(driver);
     }
