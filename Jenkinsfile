@@ -12,6 +12,17 @@ pipeline {
             }
         }
 
+        stage("Browser input for further testing")
+        {
+            steps {
+                script{
+                    env.BROWSER_INPUT = input message: 'Enter a name browser that you want to use for testing' , parameters: [
+                    string(defaultValue: '', description: 'browser used for tests', name: 'browserInput')]
+                }
+                echo "Browser used: ${env.BROWSER_INPUT}"
+            }
+        }
+
         stage("Chrome Testing") {
 
             steps {
