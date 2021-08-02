@@ -27,6 +27,20 @@ pipeline {
             }
         }
 
+        //stage("Firefox Testing") {
+
+              //steps {
+                   //script {
+                        //FIREFOX_TEST = sh( script: "mvn clean test -Dbrowser=firefox", returnStdout: true).trim()
+                   //}
+                   //echo "${FIREFOX_TEST}"
+                       // if()
+                      //  sh 'mvn clean test -Dbrowser=firefox'
+                    //}
+                //}
+
+
+
 
 
 
@@ -44,6 +58,7 @@ pipeline {
                 ])
             }
         }
+
 
     }
 
