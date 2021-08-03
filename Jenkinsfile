@@ -29,32 +29,6 @@ pipeline {
             }
         }
 
-        //stage("Chrome Testing") {
-
-            //steps {
-                //script {
-                    //CHROME_TEST = sh( script: "mvn clean test", returnStdout: true).trim()
-                //}
-                //echo "${CHROME_TEST}"
-            //}
-        //}
-
-        //stage("Firefox Testing") {
-
-              //steps {
-                   //script {
-                        //FIREFOX_TEST = sh( script: "mvn clean test -Dbrowser=firefox", returnStdout: true).trim()
-                   //}
-                   //echo "${FIREFOX_TEST}"
-                       // if()
-                      //  sh 'mvn clean test -Dbrowser=firefox'
-                    //}
-                //}
-
-
-
-
-
 
     }
     post {
