@@ -18,6 +18,9 @@ jobs:
       - name: Invoke a lifecycle phase
         run: mvn install
 
+      - name: Compile
+        run: mvn compiler:compile
+
       - name: Build Maven project
         run: mvn -b package --file pom.xml
 
