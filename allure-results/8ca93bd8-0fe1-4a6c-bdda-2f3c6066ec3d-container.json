@@ -1,1 +1,0 @@
-{"uuid":"8ca93bd8-0fe1-4a6c-bdda-2f3c6066ec3d","name":"testDynamicProperties()","children":["fffd08f1-5125-44d6-903a-e574371af421"],"befores":[{"name":"initializeWebDriver","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1627981984937,"stop":1627981989057}],"afters":[],"links":[],"start":1627981984796,"stop":1627981996580}

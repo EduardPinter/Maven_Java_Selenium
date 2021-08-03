@@ -1,1 +1,0 @@
-{"uuid":"03860f27-5ec0-4692-a8aa-54dad3b22fbe","name":"testDroppableElement()","children":["53088480-b5d7-4032-9974-cc8c04be502e"],"befores":[{"name":"initializeWebDriver","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1627981999455,"stop":1627981999816}],"afters":[],"links":[],"start":1627981999453,"stop":1627982001963}

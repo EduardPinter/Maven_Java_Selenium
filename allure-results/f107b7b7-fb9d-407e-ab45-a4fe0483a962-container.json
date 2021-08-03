@@ -1,1 +1,0 @@
-{"uuid":"f107b7b7-fb9d-407e-ab45-a4fe0483a962","name":"testScreenshotElement()","children":["55a17596-b768-4f3e-84a8-a8e188dc50f1"],"befores":[{"name":"initializeWebDriver","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1627982016942,"stop":1627982017303}],"afters":[],"links":[],"start":1627982016940,"stop":1627982035820}
