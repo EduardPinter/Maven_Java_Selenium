@@ -1,0 +1,22 @@
+08-03-2021 11:14:53.477 - TestMainDescriptionAssertion-testDescriptionAssertation-testDescriptionAssertation() - [main] - Initializing the driver....
+08-03-2021 11:14:53.478 - TestMainDescriptionAssertion-testDescriptionAssertation-testDescriptionAssertation() - [main] - ==========================================
+08-03-2021 11:14:53.478 - TestMainDescriptionAssertion-testDescriptionAssertation-testDescriptionAssertation() - [main] - Chrome was chosen!
+08-03-2021 11:14:53.482 - TestMainDescriptionAssertion-testDescriptionAssertation-testDescriptionAssertation() - [main] - Using chromedriver 92.0.4515.107 (resolved driver for Chrome 92)
+08-03-2021 11:14:53.483 - TestMainDescriptionAssertion-testDescriptionAssertation-testDescriptionAssertation() - [main] - Exporting webdriver.chrome.driver as /home/edi/.cache/selenium/chromedriver/linux64/92.0.4515.107/chromedriver
+08-03-2021 11:14:53.851 - TestMainDescriptionAssertion-testDescriptionAssertation-testDescriptionAssertation() - [main] - Visiting the page url
+08-03-2021 11:14:53.851 - TestMainDescriptionAssertion-testDescriptionAssertation-testDescriptionAssertation() - [main] - ==========================================
+08-03-2021 11:15:06.613 - TestMainDescriptionAssertion-testDescriptionAssertation-testDescriptionAssertation() - [main] - Search bar typing word
+08-03-2021 11:15:06.614 - TestMainDescriptionAssertion-testDescriptionAssertation-testDescriptionAssertation() - [main] - ==========================================
+08-03-2021 11:15:06.660 - TestMainDescriptionAssertion-testDescriptionAssertation-testDescriptionAssertation() - [main] - Clicking search button
+08-03-2021 11:15:06.660 - TestMainDescriptionAssertion-testDescriptionAssertation-testDescriptionAssertation() - [main] - ==========================================
+08-03-2021 11:15:14.002 - TestMainDescriptionAssertion-testDescriptionAssertation-testDescriptionAssertation() - [main] - Hovering over blouse item
+08-03-2021 11:15:14.002 - TestMainDescriptionAssertion-testDescriptionAssertation-testDescriptionAssertation() - [main] - ==========================================
+08-03-2021 11:15:14.155 - TestMainDescriptionAssertion-testDescriptionAssertation-testDescriptionAssertation() - [main] - Clicking quick view
+08-03-2021 11:15:14.155 - TestMainDescriptionAssertion-testDescriptionAssertation-testDescriptionAssertation() - [main] - ==========================================
+08-03-2021 11:15:14.205 - TestMainDescriptionAssertion-testDescriptionAssertation-testDescriptionAssertation() - [main] - Switching to iframe window on the page
+08-03-2021 11:15:14.205 - TestMainDescriptionAssertion-testDescriptionAssertation-testDescriptionAssertation() - [main] - ==========================================
+08-03-2021 11:15:22.114 - TestMainDescriptionAssertion-testDescriptionAssertation-testDescriptionAssertation() - [main] - Getting blouse description for assertation
+08-03-2021 11:15:22.114 - TestMainDescriptionAssertion-testDescriptionAssertation-testDescriptionAssertation() - [main] - ==========================================
+08-03-2021 11:15:22.201 - TestMainDescriptionAssertion-testDescriptionAssertation-testDescriptionAssertation() - [main] - Test was successful, test name : AutomationPractise.TestMainDescriptionAssertion@671561b9
+08-03-2021 11:15:22.201 - TestMainDescriptionAssertion-testDescriptionAssertation-testDescriptionAssertation() - [main] - 
+ ###############################################################################################################################

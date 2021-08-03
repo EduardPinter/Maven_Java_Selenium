@@ -1,0 +1,18 @@
+08-03-2021 11:13:21.969 - TestMainUpload-testUpload-testUpload() - [main] - Initializing the driver....
+08-03-2021 11:13:21.970 - TestMainUpload-testUpload-testUpload() - [main] - ==========================================
+08-03-2021 11:13:21.970 - TestMainUpload-testUpload-testUpload() - [main] - Chrome was chosen!
+08-03-2021 11:13:21.973 - TestMainUpload-testUpload-testUpload() - [main] - Using chromedriver 92.0.4515.107 (resolved driver for Chrome 92)
+08-03-2021 11:13:21.974 - TestMainUpload-testUpload-testUpload() - [main] - Exporting webdriver.chrome.driver as /home/edi/.cache/selenium/chromedriver/linux64/92.0.4515.107/chromedriver
+08-03-2021 11:13:22.325 - TestMainUpload-testUpload-testUpload() - [main] - Visiting page url
+08-03-2021 11:13:22.325 - TestMainUpload-testUpload-testUpload() - [main] - ==========================================
+08-03-2021 11:13:23.933 - TestMainUpload-testUpload-testUpload() - [main] - Clicking on Elements Page
+08-03-2021 11:13:23.933 - TestMainUpload-testUpload-testUpload() - [main] - ==========================================
+08-03-2021 11:13:24.011 - TestMainUpload-testUpload-testUpload() - [main] - Clicking on Upload segment of page
+08-03-2021 11:13:24.011 - TestMainUpload-testUpload-testUpload() - [main] - ==========================================
+08-03-2021 11:13:24.073 - TestMainUpload-testUpload-testUpload() - [main] - Uploading a file
+08-03-2021 11:13:24.073 - TestMainUpload-testUpload-testUpload() - [main] - ==========================================
+08-03-2021 11:13:24.107 - TestMainUpload-testUpload-testUpload() - [main] - Getting the message about the upload
+08-03-2021 11:13:24.107 - TestMainUpload-testUpload-testUpload() - [main] - ==========================================
+08-03-2021 11:13:24.242 - TestMainUpload-testUpload-testUpload() - [main] - Test was successful, test name : demoQA.TestMainUpload@67689c81
+08-03-2021 11:13:24.243 - TestMainUpload-testUpload-testUpload() - [main] - 
+ ###############################################################################################################################

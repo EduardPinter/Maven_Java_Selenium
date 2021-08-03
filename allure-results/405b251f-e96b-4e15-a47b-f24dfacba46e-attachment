@@ -1,0 +1,27 @@
+08-03-2021 11:13:04.940 - TestMainDynamicProperties-testDynamicProperties-testDynamicProperties() - [main] - Initializing the driver....
+08-03-2021 11:13:04.948 - TestMainDynamicProperties-testDynamicProperties-testDynamicProperties() - [main] - ==========================================
+08-03-2021 11:13:04.949 - TestMainDynamicProperties-testDynamicProperties-testDynamicProperties() - [main] - Chrome was chosen!
+08-03-2021 11:13:06.530 - TestMainDynamicProperties-testDynamicProperties-testDynamicProperties() - [main] - Using chromedriver 92.0.4515.107 (resolved driver for Chrome 92)
+08-03-2021 11:13:06.613 - TestMainDynamicProperties-testDynamicProperties-testDynamicProperties() - [main] - Exporting webdriver.chrome.driver as /home/edi/.cache/selenium/chromedriver/linux64/92.0.4515.107/chromedriver
+08-03-2021 11:13:09.113 - TestMainDynamicProperties-testDynamicProperties-testDynamicProperties() - [main] - Visiting page url
+08-03-2021 11:13:09.113 - TestMainDynamicProperties-testDynamicProperties-testDynamicProperties() - [main] - ==========================================
+08-03-2021 11:13:10.620 - TestMainDynamicProperties-testDynamicProperties-testDynamicProperties() - [main] - Clicking on Elements Page
+08-03-2021 11:13:10.621 - TestMainDynamicProperties-testDynamicProperties-testDynamicProperties() - [main] - ==========================================
+08-03-2021 11:13:10.712 - TestMainDynamicProperties-testDynamicProperties-testDynamicProperties() - [main] - Clicking on Dynamic Properties page
+08-03-2021 11:13:10.712 - TestMainDynamicProperties-testDynamicProperties-testDynamicProperties() - [main] - ==========================================
+08-03-2021 11:13:10.774 - TestMainDynamicProperties-testDynamicProperties-testDynamicProperties() - [main] - Getting page's random text
+08-03-2021 11:13:10.775 - TestMainDynamicProperties-testDynamicProperties-testDynamicProperties() - [main] - ==========================================
+08-03-2021 11:13:10.797 - TestMainDynamicProperties-testDynamicProperties-testDynamicProperties() - [main] - Checking if button is visible, not found
+08-03-2021 11:13:10.797 - TestMainDynamicProperties-testDynamicProperties-testDynamicProperties() - [main] - ==========================================
+08-03-2021 11:13:13.850 - TestMainDynamicProperties-testDynamicProperties-testDynamicProperties() - [main] - Element not found
+08-03-2021 11:13:13.850 - TestMainDynamicProperties-testDynamicProperties-testDynamicProperties() - [main] - Checking if button is enabled, FALSE
+08-03-2021 11:13:13.851 - TestMainDynamicProperties-testDynamicProperties-testDynamicProperties() - [main] - ==========================================
+08-03-2021 11:13:13.877 - TestMainDynamicProperties-testDynamicProperties-testDynamicProperties() - [main] - Checking if button is enabled, TRUE
+08-03-2021 11:13:13.877 - TestMainDynamicProperties-testDynamicProperties-testDynamicProperties() - [main] - ==========================================
+08-03-2021 11:13:16.205 - TestMainDynamicProperties-testDynamicProperties-testDynamicProperties() - [main] - Getting color for assertion
+08-03-2021 11:13:16.205 - TestMainDynamicProperties-testDynamicProperties-testDynamicProperties() - [main] - ==========================================
+08-03-2021 11:13:16.221 - TestMainDynamicProperties-testDynamicProperties-testDynamicProperties() - [main] - Checking if button is visible, TRUE
+08-03-2021 11:13:16.222 - TestMainDynamicProperties-testDynamicProperties-testDynamicProperties() - [main] - ==========================================
+08-03-2021 11:13:16.482 - TestMainDynamicProperties-testDynamicProperties-testDynamicProperties() - [main] - Test was successful, test name : demoQA.TestMainDynamicProperties@b144175
+08-03-2021 11:13:16.482 - TestMainDynamicProperties-testDynamicProperties-testDynamicProperties() - [main] - 
+ ###############################################################################################################################

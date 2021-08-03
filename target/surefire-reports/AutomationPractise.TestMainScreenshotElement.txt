@@ -1,0 +1,5 @@
+-------------------------------------------------------------------------------
+Test set: AutomationPractise.TestMainScreenshotElement
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 18.881 s - in AutomationPractise.TestMainScreenshotElement
+testScreenshotElement  Time elapsed: 18.878 s

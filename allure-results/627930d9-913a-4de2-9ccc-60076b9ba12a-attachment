@@ -1,0 +1,22 @@
+08-03-2021 11:13:16.589 - TestMainHoverElements-testHoverElements-testHoverElements() - [main] - Initializing the driver....
+08-03-2021 11:13:16.590 - TestMainHoverElements-testHoverElements-testHoverElements() - [main] - ==========================================
+08-03-2021 11:13:16.590 - TestMainHoverElements-testHoverElements-testHoverElements() - [main] - Chrome was chosen!
+08-03-2021 11:13:16.595 - TestMainHoverElements-testHoverElements-testHoverElements() - [main] - Using chromedriver 92.0.4515.107 (resolved driver for Chrome 92)
+08-03-2021 11:13:16.597 - TestMainHoverElements-testHoverElements-testHoverElements() - [main] - Exporting webdriver.chrome.driver as /home/edi/.cache/selenium/chromedriver/linux64/92.0.4515.107/chromedriver
+08-03-2021 11:13:16.998 - TestMainHoverElements-testHoverElements-testHoverElements() - [main] - Visiting page url
+08-03-2021 11:13:16.998 - TestMainHoverElements-testHoverElements-testHoverElements() - [main] - ==========================================
+08-03-2021 11:13:18.518 - TestMainHoverElements-testHoverElements-testHoverElements() - [main] - Clicking on Widgets Page
+08-03-2021 11:13:18.518 - TestMainHoverElements-testHoverElements-testHoverElements() - [main] - ==========================================
+08-03-2021 11:13:18.597 - TestMainHoverElements-testHoverElements-testHoverElements() - [main] - Clicking on ToolTip page
+08-03-2021 11:13:18.597 - TestMainHoverElements-testHoverElements-testHoverElements() - [main] - ==========================================
+08-03-2021 11:13:18.658 - TestMainHoverElements-testHoverElements-testHoverElements() - [main] - Hovering over a button
+08-03-2021 11:13:18.659 - TestMainHoverElements-testHoverElements-testHoverElements() - [main] - ==========================================
+08-03-2021 11:13:19.032 - TestMainHoverElements-testHoverElements-testHoverElements() - [main] - Getting button hover text message
+08-03-2021 11:13:19.032 - TestMainHoverElements-testHoverElements-testHoverElements() - [main] - ==========================================
+08-03-2021 11:13:19.055 - TestMainHoverElements-testHoverElements-testHoverElements() - [main] - Hovering over a input field
+08-03-2021 11:13:19.056 - TestMainHoverElements-testHoverElements-testHoverElements() - [main] - ==========================================
+08-03-2021 11:13:19.365 - TestMainHoverElements-testHoverElements-testHoverElements() - [main] - Getting input field hover text message
+08-03-2021 11:13:19.365 - TestMainHoverElements-testHoverElements-testHoverElements() - [main] - ==========================================
+08-03-2021 11:13:19.445 - TestMainHoverElements-testHoverElements-testHoverElements() - [main] - Test was successful, test name : demoQA.TestMainHoverElements@2d3eb1ea
+08-03-2021 11:13:19.445 - TestMainHoverElements-testHoverElements-testHoverElements() - [main] - 
+ ###############################################################################################################################

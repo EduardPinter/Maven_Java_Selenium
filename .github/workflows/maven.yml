@@ -1,4 +1,4 @@
-name: Java CI
+name: Maven Github Actions
 
 on: [push]
 
@@ -7,11 +7,21 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
-      - name: Set up JDK 11
-        uses: actions/setup-java@v2
+      - name: Getting the current repo
+        uses: actions/checkout@v2  # checking out the code in the current repository
+
+      - name: Set up JDK 11.0.11
+        uses: actions/setup-java@v1
         with:
-          java-version: '11'
-          distribution: 'adopt'
-      - name: Build with Maven
-        run: mvn
+          java-version: 11.0.11
+
+      - name: Build Maven project
+        run: mvn -b package --file pom.xml
+
+      - name: List all the files
+        run: ls -a
+
+      - name: What is in target folder?
+        run: |
+          cd target
+          ls -a
