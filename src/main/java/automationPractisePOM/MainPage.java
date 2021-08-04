@@ -39,6 +39,8 @@ public class MainPage {
     protected WebElement sliderScreenshot;
     @FindBy(css = "#homeslider > li:nth-child(4) > a > img")
     protected WebElement srcRedDress;
+    @FindBy(css = "#footer > div > section.blockcategories_footer.footer-block.col-xs-12.col-sm-2 > div > div > ul > li > a")
+    protected WebElement footerWomen;
 
     public MainPage(WebDriver driver) {
         this.driver = driver;
@@ -90,6 +92,8 @@ public class MainPage {
     public String getSliderCssProperty() {
         log.info("Getting slider css property");
         log.info("==========================================");
+        WebDriverWait wait = new WebDriverWait(driver, 2);
+        wait.until(ExpectedConditions.attributeToBe(sliderSelector, "left", "-2337px"));
         return sliderSelector.getCssValue("left");
     }
 
@@ -106,5 +110,11 @@ public class MainPage {
         log.info("==========================================");
         File file = sliderScreenshot.getScreenshotAs(OutputType.FILE);
         FileUtils.copyFile(file, new File("screenshot.png"));
+    }
+
+    @Step("Women category in footer click")
+    public TshirtsPage footerWomenCategory(){
+        footerWomen.click();
+        return new TshirtsPage(driver);
     }
 }

@@ -20,8 +20,9 @@ public class TestMainCheckoutAssertion extends TestBase {
 
         BasePage basePage = new BasePage(driver);
         MainPage mainPage = basePage.visitUrl();
-        mainPage.hoverWomenSection();
-        TshirtsPage tshirtsPage = mainPage.clickTshirtSection();
+        //mainPage.hoverWomenSection(); commented out because website changed, no longer is viable option
+        //TshirtsPage tshirtsPage = mainPage.clickTshirtSection();
+        TshirtsPage tshirtsPage = mainPage.footerWomenCategory();
         FadedTshirtPage fadedTshirtPage = tshirtsPage.clickOnFadedShortSleeve();
         fadedTshirtPage.pickColor();
         fadedTshirtPage.pickSize();

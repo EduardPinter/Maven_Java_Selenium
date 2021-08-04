@@ -23,5 +23,3 @@ jobs:
       - name: Invoke a lifecycle phase
         run: mvn install
 
-      - name: Compile
-        run: mvn clean test
