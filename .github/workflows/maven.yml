@@ -15,19 +15,13 @@ jobs:
         with:
           java-version: 1.11
 
+      - name: Install Google Chrome # Running shell script from scripts folder
+        run: |
+          chmod +x ./scripts/InstallChrome.sh
+            ./scripts/InstallChrome.sh
+
       - name: Invoke a lifecycle phase
         run: mvn install
 
       - name: Compile
-        run: mvn compiler:compile
-
-      - name: Build Maven project
-        run: mvn -b package --file pom.xml
-
-      - name: List all the files
-        run: ls -a
-
-      - name: What is in target folder?
-        run: |
-          cd target
-          ls -a
+        run: mvn clean test
