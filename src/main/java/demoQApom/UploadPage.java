@@ -10,6 +10,7 @@ import org.slf4j.LoggerFactory;
 
 public class UploadPage {
     protected String filePath = "/home/edi/IdeaProjects/Maven_Java_Selenium/image.png";
+    protected String filePathGithubActions = "/home/runner/work/Maven_Java_Selenium/Maven_Java_Selenium/image.png";
     protected WebDriver driver;
     private final Logger log = LoggerFactory.getLogger(UploadPage.class);
 
@@ -27,7 +28,7 @@ public class UploadPage {
     public void uploadFileSendKeys() {
         log.info("Uploading a file");
         log.info("==========================================");
-        uploadFile.sendKeys(filePath);
+        uploadFile.sendKeys(filePathGithubActions); // change to filePath for regular testing
     }
 
     @Step("Getting the message about the upload")
