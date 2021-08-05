@@ -24,6 +24,6 @@ jobs:
         run: realpath image.png
 
 
-      #- name: Invoke a lifecycle phase
-        #run: mvn install
+      - name: Invoke a lifecycle phase
+        run: mvn install
 
