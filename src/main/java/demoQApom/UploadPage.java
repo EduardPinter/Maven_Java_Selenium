@@ -9,7 +9,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class UploadPage {
-    protected String filePath = "/home/edi/Desktop/image.png";
+    protected String filePath = "/home/edi/IdeaProjects/Maven_Java_Selenium/image.png";
     protected WebDriver driver;
     private final Logger log = LoggerFactory.getLogger(UploadPage.class);
 

@@ -20,6 +20,10 @@ jobs:
           chmod +x ./scripts/InstallChrome.sh
             ./scripts/InstallChrome.sh
 
-      - name: Invoke a lifecycle phase
-        run: mvn install
+      - name: Finding Image.png
+        run: realpath image.png
+
+
+      #- name: Invoke a lifecycle phase
+        #run: mvn install
 
